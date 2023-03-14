@@ -23,6 +23,8 @@ public class GameManager : Singleton<GameManager>
     
     public static void ReloadScene()
     {
+        isRunning = false;
         UnityEngine.SceneManagement.SceneManager.LoadScene("GameIn");
     }
+    
 }

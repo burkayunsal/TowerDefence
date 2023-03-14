@@ -83,7 +83,7 @@ public class UIManager : Singleton<UIManager>
     {
         GameManager.ReloadScene();
     }
-    
+
     [System.Serializable]
     public class Panels
     {

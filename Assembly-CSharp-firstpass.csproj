@@ -42,13 +42,13 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs" />
-     <Compile Include="Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs" />
-     <Compile Include="Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs" />
      <Compile Include="Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs" />
-     <Compile Include="Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs" />
-     <Compile Include="Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs" />
-     <Compile Include="Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs" />
      <Compile Include="Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs" />
+     <Compile Include="Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs" />
+     <Compile Include="Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs" />
+     <Compile Include="Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs" />
+     <Compile Include="Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs" />
+     <Compile Include="Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs" />
      <Folder Include="Assets/Plugins/Demigiant/DOTween/Modules" />
      <Folder Include="Assets/Plugins/Demigiant/DOTween" />
      <Folder Include="Assets/Plugins" />
@@ -297,12 +297,6 @@
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>/Applications/Unity/Hub/Editor/2021.2.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="ReportGeneratorMerged">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Burst.Unsafe">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.Unsafe.dll</HintPath>
      </Reference>
@@ -320,6 +314,12 @@
      </Reference>
      <Reference Include="DOTween">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="ReportGeneratorMerged">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2021.2.10f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -702,11 +702,11 @@
      <Reference Include="Unity.VisualScripting.Flow.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.InternalAPIEngineBridge.001">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VSCode.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -720,9 +720,6 @@
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Timeline.Editor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Timeline">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
      </Reference>
@@ -735,8 +732,20 @@
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Burst.Editor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Sprite.Editor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.InternalAPIEditorBridge.001">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Path.Editor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
@@ -753,14 +762,8 @@
      <Reference Include="Unity.Rider.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.State">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
@@ -768,41 +771,38 @@
      <Reference Include="Unity.EditorCoroutines.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Path.Editor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Mathematics">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Common.Runtime">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.InternalAPIEngineBridge.001">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.VisualScripting.Shared.Editor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Timeline.Editor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Mathematics.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Common.Runtime">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.SpriteShape.Editor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.2D.SpriteShape.Runtime">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Burst.Editor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.InternalAPIEditorBridge.001">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.SpriteShape.Editor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+     <Reference Include="Unity.VisualScripting.State">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

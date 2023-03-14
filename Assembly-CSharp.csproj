@@ -52,6 +52,7 @@
      <Compile Include="Assets/Scripts/Interface/IMovement.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/Transitions/MaterialPropertyTransition.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/SizeModifiers/SizeConfigCollection.cs" />
+     <Compile Include="Assets/Scripts/PoolObjects/Tower.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/Utils/VertexMaterialData.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/BetterVerticalLayoutGroup.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/BetterRawImage.cs" />
@@ -61,6 +62,8 @@
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/BetterLocator.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/Transitions/Color32Transitions.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/BetterScrollbar.cs" />
+     <Compile Include="Assets/Scripts/Core/AnimationController.cs" />
+     <Compile Include="Assets/Scripts/Core/LevelManager.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/Transitions/ObjectActivenessTransitions.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/Utils/ScreenType/ScreenInfo.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/Utils/Materials.cs" />
@@ -80,9 +83,13 @@
      <Compile Include="Assets/Scripts/Pool/PoolObject.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/BetterAspectRatioFitter.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/BetterSlider.cs" />
+     <Compile Include="Assets/Scripts/Path/PathManager.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/BetterText.cs" />
      <Compile Include="Assets/Scripts/Behaviours/Movement.cs" />
+     <Compile Include="Assets/Scripts/Behaviours/Rotation.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/LocationAnimations.cs" />
+     <Compile Include="Assets/Scripts/Core/UIManager.cs" />
+     <Compile Include="Assets/Scripts/Core/TowerSpawner.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/SizeModifiers/ImpactMode.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/Transitions/TransitionStateCollection.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI_TextMeshPro/Runtime/BetterTextMeshProDropdown.cs" />
@@ -93,10 +100,12 @@
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/Transitions/CustomTransition.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/SizeModifiers/MarginSizeModifier.cs" />
      <Compile Include="Assets/Scripts/SO/MovementBehaviourSO.cs" />
+     <Compile Include="Assets/Scripts/Core/ScoreManager.cs" />
      <Compile Include="Assets/Scripts/SO/AttackBehaviourSO.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/Interfaces/IBetterHorizontalOrVerticalLayoutGroup.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Example/AnchorAnimations/SetAsAnchorTarget.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/RectTransformData.cs" />
+     <Compile Include="Assets/Scripts/Core/SaveLoadManager.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/Utils/ScreenType/IsScreenOfCertainSize.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/BetterHorizontalLayoutGroup.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/Utils/SingletonScriptableObject.cs" />
@@ -104,6 +113,7 @@
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/Utils/ScreenType/ScreenTypeConditions.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/AnchorOverride.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/GameObjectActivator.cs" />
+     <Compile Include="Assets/Scripts/Path/EnemySpawner.cs" />
      <Compile Include="Assets/Scripts/Core/GameManager.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/BetterLayoutElement.cs" />
      <Compile Include="Assets/Scripts/Singleton/Singleton.cs" />
@@ -116,8 +126,10 @@
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/ILayoutChildDependency.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/Utils/ScreenType/IsCertainAspectRatio.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/BetterInputField.cs" />
+     <Compile Include="Assets/Scripts/Path/PathMovement.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/Interfaces/IBetterTransitionUiElement.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/Utils/ImageAppearanceProviderHelper.cs" />
+     <Compile Include="Assets/Scripts/SO/RotationBehaviourSO.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/Utils/ScreenType/IsScreenOfCertainDeviceInfo.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/SizeDeltaSizer.cs" />
      <Compile Include="Assets/Scripts/Behaviours/Attack.cs" />
@@ -126,35 +138,23 @@
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/BetterToggle.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/IScreenConfigConnection.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/BetterSelectable.cs" />
+     <Compile Include="Assets/Scripts/PoolObjects/Enemy.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/SizeChangeTracker.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/BetterButton.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/BetterScrollRect.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/Interfaces/IResolutionDependency.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/TransformScaler.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/Utils/IngameResolutionMonitor.cs" />
+     <Compile Include="Assets/Scripts/Path/Node.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/Transitions/AlphaTransitions.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiElements/Transitions/LocationAnimationTransitions.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/BetterUiLayout/SizeModifiers/ResolutionDependentSize.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Example/CustomScreenTag/ToggleAccessibilityMode.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Runtime/Scripts/Interfaces/IImageAppearanceProvider.cs" />
      <Compile Include="Assets/Scripts/Behaviours/Health.cs" />
+     <Compile Include="Assets/Scripts/Interface/IRotation.cs" />
      <Compile Include="Assets/Scripts/PoolObjects/Bullet.cs" />
      <Compile Include="Assets/TheraBytes/BetterUI/Example/Ghost/FollowMouse.cs" />
-     <Compile Include="Assets/Scripts/Interface/IRotation.cs" />
-     <Compile Include="Assets/Scripts/SO/RotationBehaviourSO.cs" />
-     <Compile Include="Assets/Scripts/Behaviours/Rotation.cs" />
-     <Compile Include="Assets/Scripts/Core/SaveLoadManager.cs" />
-     <Compile Include="Assets/Scripts/Core/ScoreManager.cs" />
-     <Compile Include="Assets/Scripts/Core/TowerSpawner.cs" />
-     <Compile Include="Assets/Scripts/Path/PathManager.cs" />
-     <Compile Include="Assets/Scripts/Path/Node.cs" />
-     <Compile Include="Assets/Scripts/Path/PathMovement.cs" />
-     <Compile Include="Assets/Scripts/Path/EnemySpawner.cs" />
-     <Compile Include="Assets/Scripts/PoolObjects/Enemy.cs" />
-     <Compile Include="Assets/Scripts/PoolObjects/Tower.cs" />
-     <Compile Include="Assets/Scripts/Core/LevelManager.cs" />
-     <Compile Include="Assets/Scripts/Core/UIManager.cs" />
-     <Compile Include="Assets/Scripts/Core/AnimationController.cs" />
      <Folder Include="Assets" />
      <None Include="Assets/TheraBytes/BetterUI/Runtime/Resources/Materials/HueSaturationBrightness.shader" />
      <Folder Include="Assets/TheraBytes/BetterUI/Example" />
@@ -476,12 +476,6 @@
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>/Applications/Unity/Hub/Editor/2021.2.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="ReportGeneratorMerged">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Burst.Unsafe">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.Unsafe.dll</HintPath>
      </Reference>
@@ -499,6 +493,12 @@
      </Reference>
      <Reference Include="DOTween">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="ReportGeneratorMerged">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2021.2.10f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -881,11 +881,11 @@
      <Reference Include="Unity.VisualScripting.Flow.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.InternalAPIEngineBridge.001">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VSCode.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -899,9 +899,6 @@
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Timeline.Editor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Timeline">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
      </Reference>
@@ -914,8 +911,20 @@
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Burst.Editor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Sprite.Editor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.InternalAPIEditorBridge.001">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Path.Editor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
@@ -932,14 +941,8 @@
      <Reference Include="Unity.Rider.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.State">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
@@ -947,41 +950,38 @@
      <Reference Include="Unity.EditorCoroutines.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Path.Editor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Mathematics">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Common.Runtime">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.InternalAPIEngineBridge.001">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.VisualScripting.Shared.Editor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Timeline.Editor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Mathematics.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Common.Runtime">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.SpriteShape.Editor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Editor">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.2D.SpriteShape.Runtime">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Burst.Editor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.InternalAPIEditorBridge.001">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.SpriteShape.Editor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+     <Reference Include="Unity.VisualScripting.State">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

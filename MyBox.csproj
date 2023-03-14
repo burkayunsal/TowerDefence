@@ -100,8 +100,8 @@
      <Compile Include="Packages/MyBox/Types/EditorTypes/EditorPrefsVector3.cs" />
      <Compile Include="Packages/MyBox/Attributes/DisplayInspectorAttribute.cs" />
      <Compile Include="Packages/MyBox/Types/ColliderToMesh.cs" />
-     <Compile Include="Packages/MyBox/Tools/Undone/NodeEditorUtils.cs" />
      <Compile Include="Packages/MyBox/Extensions/MyUI.cs" />
+     <Compile Include="Packages/MyBox/Tools/Undone/NodeEditorUtils.cs" />
      <Compile Include="Packages/MyBox/Types/SceneReference.cs" />
      <Compile Include="Packages/MyBox/Types/GUID/GUIDEditor/GuidComponentDrawer.cs" />
      <Compile Include="Packages/MyBox/Attributes/MustBeAssignedAttribute.cs" />
@@ -476,6 +476,15 @@
      <Reference Include="Unity.VisualScripting.YamlDotNet">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
      </Reference>
+     <Reference Include="DOTweenEditor">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Unsafe">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.Unsafe.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil.Mdb">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.TextureAssets">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll</HintPath>
      </Reference>
@@ -485,35 +494,26 @@
      <Reference Include="unityplastic">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.collab-proxy@2.0.0/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
      </Reference>
-     <Reference Include="log4netPlastic">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.collab-proxy@2.0.0/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="ReportGeneratorMerged">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst.Unsafe">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.Unsafe.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst.Cecil.Mdb">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Burst.Cecil.Pdb">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll</HintPath>
      </Reference>
+     <Reference Include="log4netPlastic">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.collab-proxy@2.0.0/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Burst.Cecil.Rocks">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll</HintPath>
      </Reference>
-     <Reference Include="DOTweenEditor">
-     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
-     </Reference>
      <Reference Include="DOTween">
      <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="ReportGeneratorMerged">
+     <HintPath>/Users/burkayunsal/Documents/TowerDefenceB/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2021.2.10f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
